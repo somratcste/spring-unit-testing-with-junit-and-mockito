@@ -84,4 +84,22 @@ public class ItemControllerTest {
         //JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
 
     }
+
+    @Test
+    public void retrieveAllItems_noitems() throws Exception {
+        when(businessService.retrieveAllItems()).thenReturn(
+                Arrays.asList()
+        );
+
+        RequestBuilder request = MockMvcRequestBuilders
+                .get("/all-items-from-database")
+                .accept(MediaType.APPLICATION_JSON);
+
+        MvcResult result = mockMvc.perform(request)
+                .andExpect(status().isOk())
+                .andExpect(content().json("[]"))
+                .andReturn();
+        //JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
+
+    }
 }

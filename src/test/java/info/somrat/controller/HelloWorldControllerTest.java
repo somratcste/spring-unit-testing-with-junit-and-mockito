@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(HelloWorldController.class)
 // @ComponentScan(basePackages = "info.somrat")
-@Import(HelloWorldController.class)
+//@Import(HelloWorldController.class)
 public class HelloWorldControllerTest {
 
     @Autowired

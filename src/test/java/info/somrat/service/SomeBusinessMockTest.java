@@ -1,4 +1,4 @@
-package info.somrat.business;
+package info.somrat.service;
 
 import info.somrat.data.SomeDataService;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import static org.mockito.Mockito.when;
 public class SomeBusinessMockTest {
 
     @InjectMocks
-    SomeBusinessImpl business;
+    SomeServiceImpl business;
 
     @Mock
     SomeDataService dataServiceMock;

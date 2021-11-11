@@ -1,9 +1,9 @@
-package info.somrat.business;
+package info.somrat.service;
 
 import info.somrat.data.SomeDataService;
 import java.util.Arrays;
 
-public class SomeBusinessImpl {
+public class SomeServiceImpl {
 
     private SomeDataService someDataService;
 

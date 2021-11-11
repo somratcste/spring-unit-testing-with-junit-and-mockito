@@ -1,4 +1,4 @@
-package info.somrat.business;
+package info.somrat.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;

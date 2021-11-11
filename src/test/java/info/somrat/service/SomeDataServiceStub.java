@@ -1,4 +1,4 @@
-package info.somrat.business;
+package info.somrat.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -30,7 +30,7 @@ class SomeBusinessStubTest {
 
     @Test
     public void calculateSumUsingDataService_basic() {
-        SomeBusinessImpl business = new SomeBusinessImpl();
+        SomeServiceImpl business = new SomeServiceImpl();
         business.setSomeDataService(new SomeDataServiceStub());
         int actualResult = business.calculateSumUsingDataService();
         int expectedResult = 6;
@@ -39,7 +39,7 @@ class SomeBusinessStubTest {
 
     @Test
     public void calculateSumUsingDataService_empty() {
-        SomeBusinessImpl business = new SomeBusinessImpl();
+        SomeServiceImpl business = new SomeServiceImpl();
         business.setSomeDataService(new SomeDataServiceEmptyStub());
         int actualResult = business.calculateSumUsingDataService();//new int[] {}
         int expectedResult = 0;
@@ -48,7 +48,7 @@ class SomeBusinessStubTest {
 
     @Test
     public void calculateSumUsingDataService_oneValue() {
-        SomeBusinessImpl business = new SomeBusinessImpl();
+        SomeServiceImpl business = new SomeServiceImpl();
         business.setSomeDataService(new SomeDataServiceOneElementStub());
         int actualResult = business.calculateSumUsingDataService();//new int[] { 5 }
         int expectedResult = 5;

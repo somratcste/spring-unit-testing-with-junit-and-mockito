@@ -9,7 +9,6 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.List;
 
 @DataJpaTest
-@ActiveProfiles("dev")
 public class ItemRepositoryTest {
 
     @Autowired
